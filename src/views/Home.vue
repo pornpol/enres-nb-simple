@@ -1,18 +1,43 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <section class="section">
+      <div class="columns is-mobile" v-for="(item, key) in sysInfo[0]" :key="key">
+        <div class="column is-one-fifth" style="text-align:right;">
+          {{key}}:
+        </div>
+        <div class="column">
+          {{item}}
+        </div>
+      </div>
+      <!-- <ul id="test">
+        <li v-for="(item, key) in sysInfo[0]" :key="key">
+          {{key}} : {{item}}
+        </li>
+      </ul> -->
+    </section>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import axios from 'axios';
 
 export default {
-  name: 'home',
-  components: {
-    HelloWorld
+
+  data () {
+    return {
+      hName: "",
+      sysInfo : {}
+    }
+  },
+  methods: {
+    getSysInfo: function(){
+      axios
+        .get(this.hName+'/api/systeminfo')
+        .then(response => (this.sysInfo = response.data))
+    }
+  },
+  mounted() {
+    this.getSysInfo()
   }
 }
 </script>

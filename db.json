@@ -1,0 +1,277 @@
+{
+  "globalconfig": [{
+    "apName" : "ENRES",
+    "apPass" : "Enres824",
+    "staName" : "PBKK",
+    "staPass" : "HappyPBKK",
+    "server" : "http://data.enres.co",
+    "token" : "jioqwdjcfionwiop",
+    "meterPath" : "/data",
+    "meterPathBatch" : "/data_batch",
+    "sensorPath" : "/data_sensor",
+    "sensorPathBatch" : "/data_sensor_batch",
+    "genericPath" : "/data_sensor",
+    "genericPathBatch" : "/data_sensor_batch",
+    "upload" : 1,
+    "interval" : 60,
+    "loggerType" : 1,
+    "modbusConfig" : 0,
+    "timeAp" : 300
+  }],
+  "eventlog": [
+      { "id": 1, "code": 111, "msg": "Test Msg", "mdt": 1565865235 },
+      { "id": 2, "code": 222, "msg": "Test Msg", "mdt": 1565865295 },
+      { "id": 3, "code": 333, "msg": "Test Msg", "mdt": 1565865355 }
+  ],
+  "allmeter": [
+  {
+    "meterId": 1,
+    "meterAddr": 1,
+    "meterType": 3,
+    "exid": 125,
+    "wAdj": 1,
+    "whAdj": 1,
+    "pfAdj": 1,
+    "varhAdj": 1,
+    "i0Adj": 1,
+    "i1Adj": 1,
+    "i2Adj": 1,
+    "v0Adj": 1,
+    "v1Adj": 1,
+    "v2Adj": 1
+  },
+  {
+    "meterId": 2,
+    "meterAddr": 2,
+    "meterType": 3,
+    "exid": 126,
+    "wAdj": 1,
+    "whAdj": 1,
+    "pfAdj": 1,
+    "varhAdj": 1,
+    "i0Adj": 1,
+    "i1Adj": 1,
+    "i2Adj": 1,
+    "v0Adj": 1,
+    "v1Adj": 1,
+    "v2Adj": 1
+  },
+  {
+    "meterId": 3,
+    "meterAddr": 3,
+    "meterType": 3,
+    "exid": 127,
+    "wAdj": 1,
+    "whAdj": 1,
+    "pfAdj": 1,
+    "varhAdj": 1,
+    "i0Adj": 1,
+    "i1Adj": 1,
+    "i2Adj": 1,
+    "v0Adj": 1,
+    "v1Adj": 1,
+    "v2Adj": 1
+  }
+  ],
+  "allsensor": [
+  {
+    "sensorId": 1,
+    "exid": 1000,
+    "value": [
+    {
+      "vd": 0,
+      "min": 4,
+      "max": 20,
+      "key": "vd1"
+    },
+    {
+      "vd": 1,
+      "min": 4,
+      "max": 20,
+      "key": "vd2"
+    },
+    {
+      "vd": 2,
+      "min": 4,
+      "max": 20,
+      "key": "vd3"
+    },
+    {
+      "vd": 3,
+      "min": 4,
+      "max": 20,
+      "key": "vd4"
+    },
+    {
+      "vd": 4,
+      "min": 4,
+      "max": 20,
+      "key": "vd5"
+    },
+    {
+      "vd": 5,
+      "min": 4,
+      "max": 20,
+      "key": "vd6"
+    },
+    {
+      "vd": 6,
+      "min": 4,
+      "max": 20,
+      "key": "vd7"
+    },
+    {
+      "vd": 7,
+      "min": 4,
+      "max": 20,
+      "key": "vd8"
+    }]
+  },
+  {
+    "sensorId": 2,
+    "exid": 1001,
+    "value": [
+    {
+      "vd": 0,
+      "min": 4,
+      "max": 20,
+      "key": "vd1"
+    },
+    {
+      "vd": 1,
+      "min": 0,
+      "max": 20,
+      "key": "vd2"
+    },
+    {
+      "vd": -1,
+      "min": 4,
+      "max": 20,
+      "key": "vd3"
+    },
+    {
+      "vd": -1,
+      "min": 4,
+      "max": 20,
+      "key": "vd4"
+    },
+    {
+      "vd": -1,
+      "min": 4,
+      "max": 20,
+      "key": "vd5"
+    },
+    {
+      "vd": -1,
+      "min": 4,
+      "max": 20,
+      "key": "vd6"
+    },
+    {
+      "vd": -1,
+      "min": 4,
+      "max": 20,
+      "key": "vd7"
+    },
+    {
+      "vd": -1,
+      "min": 4,
+      "max": 20,
+      "key": "vd8"
+    }]
+  }
+  ],
+  "allgeneric" : [
+    {
+      "genericId": 1,
+      "genericAddr": 1,
+      "exid": 1021,
+      "dtKey": "sdt",
+      "value": [
+      {
+        "addr": 14,
+        "fc": 3,
+        "type": 12,
+        "key": "vd1",
+        "ratio": 1
+      },
+      {
+        "addr": 256,
+        "fc": 3,
+        "type": 12,
+        "key": "vd2",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd3",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd4",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd5",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd6",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd7",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd8",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd9",
+        "ratio": 1
+      },
+      {
+        "addr": -1,
+        "fc": 0,
+        "type": 0,
+        "key": "vd10",
+        "ratio": 1
+      }
+    ]
+  }
+  ],
+  "systeminfo" : [
+    {
+      "upTime": 60,
+      "ip": "192.168.1.107",
+      "mac": "30:AE:A4:C3:7A:48",
+      "wifi": -45,
+      "nb": -109,
+      "loggerType": 1,
+      "uploadType": 2,
+      "LatestData": "[{\"emid\":125, \"w\":0.00, \"wh\":771995.50, \"pf\":0.00, \"varh\":328777.59, \"i0\":0.00, \"i1\":0.00, \"i2\":0.00, \"v0\":216.90, \"v1\":0.00, \"v2\":0.00, \"mdt\":201908221349}]",
+      "TimeLatestData": "201908221350"
+    }
+  ]
+}
