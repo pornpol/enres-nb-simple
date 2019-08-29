@@ -12,7 +12,7 @@
             <b-input v-model="meter.meterId" placeholder="1"></b-input>
           </b-field>
           <b-field label="Meter Address" label-position="on-border">
-            <b-input v-model="meter.meterId" placeholder="1"></b-input>
+            <b-input v-model="meter.meterAddr" placeholder="1"></b-input>
           </b-field>
 
           <b-field label="Meter Type" label-position="on-border">
